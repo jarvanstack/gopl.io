@@ -2,6 +2,7 @@
 
 hi, here
 
+中文书籍地址: https://books.studygolang.com/gopl-zh/
 
 > ref:  
 > 
