@@ -12,10 +12,11 @@ import (
 	"log"
 	"math"
 	"net/http"
+
+	"gopl.io/ch7/eval"
 )
 
 //!+parseAndCheck
-import "gopl.io/ch7/eval"
 
 //!-parseAndCheck
 
@@ -106,7 +107,7 @@ func plot(w http.ResponseWriter, r *http.Request) {
 //!+main
 func main() {
 	http.HandleFunc("/plot", plot)
-	log.Fatal(http.ListenAndServe("localhost:8000", nil))
+	log.Fatal(http.ListenAndServe(":8001", nil))
 }
 
 //!-main
